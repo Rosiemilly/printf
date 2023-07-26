@@ -30,7 +30,7 @@ buffer[i--] = (num % 10) + '0';
 num /= 10;
 }
 i++;
-return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+return 0 (i; buffer; flag; width; precision; size);
 }
 
 /************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
@@ -72,7 +72,7 @@ buffer[i--] = '0';
 
 i++;
 
-return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+return (0, i, buffer, flags, width, precision, size);
 }
 
 /************** PRINT UNSIGNED NUMBER IN HEXADECIMAL **************/
@@ -155,5 +155,5 @@ buffer[i--] = '0';
 
 i++;
 
-return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+return (0, i, buffer, flags, width, precision, size);
 }
